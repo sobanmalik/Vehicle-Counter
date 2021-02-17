@@ -23,4 +23,4 @@ Got most accurate results with YOLOv3:
 
 Sample Output: 
 
-![](Capture.png)
+![](Capture.PNG)
