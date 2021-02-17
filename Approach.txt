@@ -1,0 +1,31 @@
+!! Download yoloV3 weights from https://pjreddie.com/media/files/yolov3.weights and put it in 'yolo_files' folder.
+To test a video, put the video in the 'testing_video' folder.
+
+
+Approach taken:
+
+Tried different Yolo Models on two different use cases: 
+1. traffic in the day 
+2. traffic in the night
+
+Used YOLO modles pre trained on the COCO dataset. Other models do not work well in detecting grouped objects and are relatively slower.
+
+
+Got most accurate results with YOLOv3:
+
+- model size: 236MB
+- Almost no vehicle is missed in detection.
+- Inferencing is a little slow. (Lag is present)
+- confidence input = 0.5, threshold = 0.3
+
+
+Got decent results with YOLOv3-tiny:
+
+- model size : 33MB
+- Some vechicles are missed in detection.
+- Reducing the confidence thresholds improves detection.
+- Inferencing is fast. (Minimal lag)
+
+Requirements:
+
+OpenCV (latest version), numpy
