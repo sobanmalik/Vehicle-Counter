@@ -20,3 +20,7 @@ Got most accurate results with YOLOv3:
 - Almost no vehicle is missed in detection.
 - Inferencing is a little slow. (Lag is present)
 - confidence input = 0.5, threshold = 0.3
+
+Sample Output: 
+
+![](Capture.png)
